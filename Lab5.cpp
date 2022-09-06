@@ -10,11 +10,20 @@ using std::endl;
 //          and returns an integer. Then try to run your program.
 
 //YOUR WORK HERE
+int cube(int Num);
 
+
+   
 //Step 2:   DEFINE (or "implement") the cube function, but JUST MAKE IT RETURN ZERO
 //          Then run your program
 
 //YOUR WORK HERE
+int cube(int Num){
+   int results = Num*Num*Num;
+   return results;
+}
+
+
 
 //Step 3:   In the space above, fix your cube function to return the input cubed
 
@@ -43,6 +52,7 @@ void main(){
 
 //The definition (or "implementation") of the test function...
 void test(int input, int expectedResult){
+
    //Figure out
    int returned = cube(input);
    cout << "testing cube(" << input << ") = " << returned << "... " ;
